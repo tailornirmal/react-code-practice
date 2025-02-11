@@ -1,16 +1,11 @@
 import PropTypes from "prop-types";
+import "./Input.css";
 
-const Input = ({ title, type, value, onChange, style = {}, ...props }) => {
+const Input = ({ title, type, value, onChange, ...props }) => {
   return (
     <>
       <label>{title}</label>
-      <input
-        type={type}
-        style={style}
-        value={value}
-        onChange={onChange}
-        {...props}
-      />
+      <input type={type} value={value} onChange={onChange} {...props} />
     </>
   );
 };

@@ -1,0 +1,24 @@
+.homesection {
+    flex: content;
+    align-items: center;
+    height: auto;
+}
+
+.homesection .tech-wrapper {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homesection .tech {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}

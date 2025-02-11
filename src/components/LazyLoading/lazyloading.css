@@ -1,0 +1,15 @@
+.roleslist {
+    padding: 1rem;
+}
+
+.roleslist .active-role {
+    color: green;
+}
+
+.roleslist .nonactive-role {
+    color: red;
+}
+
+.roleslist div span {
+    padding-left: 2rem;
+}

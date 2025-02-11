@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 28,
+    "gender": "Male",
+    "address": "123 Main St, Anytown, USA"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 32,
+    "gender": "Female",
+    "address": "456 Oak St, Anytown, USA"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "email": "michael.johnson@example.com",
+    "age": 45,
+    "gender": "Male",
+    "address": "789 Pine St, Anytown, USA"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "email": "emily.davis@example.com",
+    "age": 22,
+    "gender": "Female",
+    "address": "101 Maple St, Anytown, USA"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "email": "david.wilson@example.com",
+    "age": 35,
+    "gender": "Male",
+    "address": "202 Birch St, Anytown, USA"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Brown",
+    "email": "sarah.brown@example.com",
+    "age": 29,
+    "gender": "Female",
+    "address": "303 Cedar St, Anytown, USA"
+  },
+  {
+    "id": 7,
+    "name": "James Taylor",
+    "email": "james.taylor@example.com",
+    "age": 41,
+    "gender": "Male",
+    "address": "404 Elm St, Anytown, USA"
+  },
+  {
+    "id": 8,
+    "name": "Jessica Martinez",
+    "email": "jessica.martinez@example.com",
+    "age": 27,
+    "gender": "Female",
+    "address": "505 Spruce St, Anytown, USA"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Anderson",
+    "email": "daniel.anderson@example.com",
+    "age": 38,
+    "gender": "Male",
+    "address": "606 Willow St, Anytown, USA"
+  },
+  {
+    "id": 10,
+    "name": "Laura Thomas",
+    "email": "laura.thomas@example.com",
+    "age": 33,
+    "gender": "Female",
+    "address": "707 Ash St, Anytown, USA"
+  }
+]

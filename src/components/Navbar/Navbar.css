@@ -1,0 +1,23 @@
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+}

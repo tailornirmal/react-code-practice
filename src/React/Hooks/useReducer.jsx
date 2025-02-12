@@ -102,7 +102,12 @@ export const UseReducerHook = () => {
     }
   };
 
-  const { name, age, address, phone } = state;
+  const {
+    name,
+    age,
+    address: { city, state: stateValue, country },
+    phone,
+  } = state;
 
   return (
     <form>
@@ -139,7 +144,7 @@ export const UseReducerHook = () => {
             title={"Enter City"}
             type="text"
             name="city"
-            value={address.city}
+            value={city}
             aria-describedby="City"
             placeholder="Enter City"
             onChange={handleChange}
@@ -151,7 +156,7 @@ export const UseReducerHook = () => {
             title={"Enter State"}
             type="text"
             name="state"
-            value={address.state}
+            value={stateValue}
             aria-describedby="State"
             placeholder="Enter State"
             onChange={handleChange}
@@ -163,7 +168,7 @@ export const UseReducerHook = () => {
             title={"Enter Country"}
             type="text"
             name="country"
-            value={address.country}
+            value={country}
             aria-describedby="Country"
             placeholder="Enter Country"
             onChange={handleChange}

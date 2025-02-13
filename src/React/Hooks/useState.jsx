@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import JsonData from "./data.json";
 import todoTasks from "./object";
 
@@ -53,7 +53,7 @@ export const UseStateHook = () => {
         <p>{count}</p>
         {values.length > 0 &&
           values.map((e) => {
-            return <div key={e.id}>{e.task}</div>;
+            return <Fragment key={e.id}>{e.task}</Fragment>;
           })}
       </div>
       <button onClick={handleAddNew}>Add New</button>

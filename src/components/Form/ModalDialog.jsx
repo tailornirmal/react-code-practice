@@ -4,9 +4,10 @@ import "./ModalDialog.css";
 
 export const ModalDialog = (props) => {
   // De structure props received
-  const { open, onClose, title, Content, closeIcon } = props;
+  const { open, onClose, title, Content, Footer, closeIcon } = props;
 
   useEffect(() => {
+    console.log("call on every re render");
     const exitOnEsc = (e) => {
       if (e.key === "Escape" && open) {
         if (onClose) {
@@ -40,14 +41,7 @@ export const ModalDialog = (props) => {
 
           <div className="body">{Content}</div>
 
-          {/* <div className="footer">
-            {secondaryFn && (
-              <button onClick={secondaryFn} id="cancelBtn">
-                Cancel
-              </button>
-            )}
-            {primaryFn && <button onClick={primaryFn}>Continue</button>}
-          </div> */}
+          {Footer}
         </div>
       </div>
     )

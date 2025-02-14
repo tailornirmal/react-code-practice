@@ -1,5 +1,12 @@
 import "./Form.css";
+import { useEffect } from "react";
 const Form = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      throw new Error("Can't render this component");
+    }, 5000);
+  }, []);
+
   return (
     <div id="form-container">
       <div id="left">

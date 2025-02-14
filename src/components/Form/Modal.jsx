@@ -10,11 +10,19 @@
 
 */
 
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { ModalDialog } from "src/components/Form/ModalDialog";
 
 function Modal() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      throw new Error("Can't render this component");
+    }, 5000);
+  }, []);
+
+  console.log(myvariable);
 
   const Footer = (
     <div>

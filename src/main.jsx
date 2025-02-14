@@ -4,10 +4,15 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 
+// import Errorboundry from "./Errorboundry.jsx";
+import ErrorboundryClass from "./ErrorboundryClass.jsx";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <ErrorboundryClass>
+        <App />
+      </ErrorboundryClass>
     </BrowserRouter>
   </StrictMode>
 );

@@ -11,7 +11,7 @@
 */
 
 import { useState, Fragment, useEffect } from "react";
-import { ModalDialog } from "src/components/Form/ModalDialog";
+import { ModalDialog } from "./ModalDialog";
 
 function Modal() {
   const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ function Modal() {
     }, 5000);
   }, []);
 
-  console.log(myvariable);
+  // console.log(myvariable);
 
   const Footer = (
     <div>

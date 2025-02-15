@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "1d48",
+      "firstname": "nirmal",
+      "lastname": "kumar",
+      "email": "nirmal@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "contact": "9028928774"
+    },
+    {
+      "id": "9d3f",
+      "firstname": "John",
+      "lastname": "Smit",
+      "email": "nirmal@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "contact": "9028928774"
+    }
+  ],
+  "comments": [],
+  "profile": {}
+}

@@ -17,6 +17,9 @@ const Navbar = () => {
         <li>
           <Link to="/react">React JS</Link>
         </li>
+        <li>
+          <Link to="/register">Registration</Link>
+        </li>
       </ul>
     </nav>
   );

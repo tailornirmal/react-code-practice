@@ -5,16 +5,18 @@ import { Navigate } from "react-router-dom";
 import Form from "./components/Form/Form";
 import Component from "./React/Hooks";
 import Modal from "./components/Form/Modal";
+import Registration from "./components/Form/Registration/Registration";
 
 const RoutesComponent = () => {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/lazyload" element={<Lazyloading />} />
-        <Route exact path="/form" element={<Form />} />
-        <Route exact path="/react" element={<Component />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/lazyload" element={<Lazyloading />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/react" element={<Component />} />
         <Route path="/modal" element={<Modal />} />
+        <Route path="/register" element={<Registration />} />
         <Route path="*" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

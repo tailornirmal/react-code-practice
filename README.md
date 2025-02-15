@@ -4,7 +4,7 @@ I am contributing this repository to add hands on code related to UI Technologie
 
 # Topic Covered from React JS
 
-# Hooks # Identify Screen Resolution
+# Hooks
 
     useState                      Mobile
     useEffect                     Desktop
@@ -45,3 +45,5 @@ I am contributing this repository to add hands on code related to UI Technologie
 # React-intl
 
     Format message in different languages
+
+# Nav Bar with Active link highlighted

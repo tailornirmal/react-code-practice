@@ -1,9 +1,15 @@
 .footer {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #CCC;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    vertical-align: bottom;
-    color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-size: small;
+    text-align: center;
+}
+
+.container {
+    column-count: 3;
+    column-gap: 20px;
 }

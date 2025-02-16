@@ -16,6 +16,7 @@ import {
   errorInitialObject,
   submitForm,
 } from "./Actions";
+import "./Registration.css";
 
 const Registration = () => {
   const [formData, setFormData] = useState<User>(userInitialObject);
@@ -102,8 +103,8 @@ const Registration = () => {
 
   return (
     <Fragment>
-      <form className="max-w-max mx-auto mt-20">
-        <h1>Create Account</h1>
+      <form className="max-w-max mx-auto mt-20 h-screen">
+        <h1 className="register-heading-title">Create Account</h1>
         <hr className="mt-2 mb-10" />
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">

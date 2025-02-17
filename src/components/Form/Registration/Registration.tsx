@@ -7,8 +7,9 @@
     Optimize Code
 */
 
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useState } from "react";
+import Alert from "../../Reusable/Alert";
 import {
   User,
   validateField,
@@ -21,6 +22,7 @@ import "./Registration.css";
 const Registration = () => {
   const [formData, setFormData] = useState<User>(userInitialObject);
   const [errors, setErrors] = useState<User>(errorInitialObject);
+  const [alert, setAlert] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, files } = e.target;
@@ -95,7 +97,8 @@ const Registration = () => {
       });
     } else {
       console.log("no error exists", formData);
-      submitForm(formData);
+      const formSubmitState = submitForm(formData);
+      formSubmitState.then(() => setAlert(true));
     }
   };
 
@@ -104,6 +107,12 @@ const Registration = () => {
   return (
     <Fragment>
       <form className="max-w-max mx-auto mt-20 h-screen">
+        {alert && (
+          <Alert
+            title="Congratulation !! Your account created successfully."
+            description="You can login now."
+          />
+        )}
         <h1 className="register-heading-title">Create Account</h1>
         <hr className="mt-2 mb-10" />
         <div className="grid md:grid-cols-2 md:gap-6">

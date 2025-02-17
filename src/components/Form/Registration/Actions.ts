@@ -76,7 +76,6 @@ export const validateField = (
 };
 
 export const submitForm = async (formData: object) => {
-  const location = window.location.hostname;
   const settings = {
     method: "POST",
     headers: {
@@ -89,6 +88,7 @@ export const submitForm = async (formData: object) => {
     const fetchResponse = await fetch(`http://localhost:3000/users`, settings);
     const data = await fetchResponse.json();
     console.log("on success", data);
+    return data;
   } catch (e) {
     return e;
   }

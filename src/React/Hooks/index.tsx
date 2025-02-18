@@ -2,6 +2,7 @@
 // import { UseEffectHook } from "./useEffect";
 // import { UseReducerHook } from "./useReducer";
 import { PerformanceHook } from "./Performance";
+import UseRefHook from "./useRef";
 
 const Component = () => {
   return (
@@ -9,7 +10,8 @@ const Component = () => {
       {/* <UseStateHook /> */}
       {/* <UseEffectHook /> */}
       {/* <UseReducerHook /> */}
-      <PerformanceHook />
+      {/* <PerformanceHook /> */}
+      <UseRefHook />
     </>
   );
 };

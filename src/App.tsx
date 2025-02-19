@@ -1,11 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
 import RoutesComponent from "./Routes";
 import Footer from "./components/Footer/Footer";
+import { UseContextHook } from "./React/Hooks/useContext";
 
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
+      <UseContextHook>
+        <Navbar />
+      </UseContextHook>
       <RoutesComponent />
       <Footer />
     </div>

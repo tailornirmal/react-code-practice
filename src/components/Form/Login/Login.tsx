@@ -7,7 +7,8 @@
 */
 
 import { useState } from "react";
-import { loginForm } from "./Login";
+import { loginForm } from "./LoginActions";
+import { Delay } from "../../../Utilities/Delay";
 
 const Login = () => {
   const [login, setLogin] = useState({});
@@ -25,6 +26,17 @@ const Login = () => {
       return false;
     }
     console.log("login", login);
+
+    Delay({}, 1000);
+
+    const loginStatus = loginForm(login);
+
+    loginStatus.then((e) => console.log("E", e));
+
+    console.log("loginstatus", loginStatus);
+  };
+
+  const handleLoginWithDelay = () => {
     const loginStatus = loginForm(login);
 
     loginStatus.then((e) => console.log("E", e));

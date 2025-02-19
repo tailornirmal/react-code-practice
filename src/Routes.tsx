@@ -6,7 +6,8 @@ import Form from "./components/Form/Form";
 import Component from "./React/Hooks";
 import Modal from "./components/Form/Modal";
 import Registration from "./components/Form/Registration/Registration";
-// import Login from "./components/Form/Login/Login";
+import Login from "./components/Form/Login/Login";
+// import VideoPlayerComponent from "./components/Reusable/VideoPlayer";
 
 const RoutesComponent = () => {
   return (
@@ -18,7 +19,7 @@ const RoutesComponent = () => {
         <Route path="/react" element={<Component />} />
         <Route path="/modal" element={<Modal />} />
         <Route path="/register" element={<Registration />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

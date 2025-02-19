@@ -78,14 +78,17 @@ export const validateField = (
 export const submitForm = async (formData: object) => {
   const settings = {
     method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   Accept: "application/json",
+    //   "Content-Type": "application/json",
+    // },
     body: JSON.stringify(formData),
   };
   try {
-    const fetchResponse = await fetch(`http://localhost:3000/users`, settings);
+    const fetchResponse = await fetch(
+      `http://my-json-server.typicode.com/tailornirmal/react-ts-cms-app/`,
+      settings
+    );
     const data = await fetchResponse.json();
     console.log("on success", data);
     return data;
